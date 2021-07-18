@@ -8,7 +8,9 @@
     "gatsby"
   ],
   "scripts": {
-    "develop": "gatsby develop",
+    "develop:gatsby": "gatsby develop",
+    "develop:type-check": "tsc --watch",
+    "develop": "npm-run-all --parallel develop:gatsby develop:type-check",
     "start": "gatsby develop",
     "build": "gatsby build",
     "serve": "gatsby serve",
