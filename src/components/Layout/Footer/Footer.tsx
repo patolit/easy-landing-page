@@ -6,7 +6,7 @@ const classes = require("./Footer.module.css");
 function Footer() {
   return (
     <footer>
-      <Logo height="20px" />
+      <Logo />
     </footer>
   );
 }

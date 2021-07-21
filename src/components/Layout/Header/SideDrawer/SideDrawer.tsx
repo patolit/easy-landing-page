@@ -2,7 +2,7 @@ import * as React from "react";
 import Backdrop from "../../../Backdrop/Backdrop";
 
 import Logo from "../../../Logo/Logo";
-import NavigationItems from "../NavigationItems/NavigationItems";
+import NavigationItems from "../Toolbar/NavigationItems/NavigationItems";
 const classes = require("./SideDrawer.module.css");
 
 interface SideDrawerProps {
@@ -20,7 +20,7 @@ const SideDrawer = (props: SideDrawerProps) => {
       <Backdrop show={props.open} clicked={props.close} />
       <div className={attachedClasses.join(" ")}>
         <div className={classes.Logo}>
-          <Logo height="20px" />
+          <Logo />
         </div>
         <nav>
           <NavigationItems />

@@ -1,13 +1,12 @@
 import * as React from "react";
 import { useState } from "react";
 import { ReactNode } from "react";
-import Toolbar from "./Navigation/Toolbar/Toolbar";
-import SideDrawer from "./Navigation/SideDrawer/SideDrawer";
+import Toolbar from "./Header/Toolbar/Toolbar";
+import SideDrawer from "./Header/SideDrawer/SideDrawer";
 import { Footer } from "./Footer/Footer";
 
 import { Helmet } from "react-helmet";
 //import styles from "./layout.module.css";
-const styles = require("./layout.module.css");
 const base = require("../../pages/base.module.css");
 
 interface LayoutProps {
@@ -29,7 +28,7 @@ const Layout = (props: LayoutProps) => {
   };
 
   return (
-    <div className={base.root}>
+    <>
       <Helmet>
         <title>{pageTitle}</title>
       </Helmet>
@@ -37,7 +36,7 @@ const Layout = (props: LayoutProps) => {
       <SideDrawer open={showSideDrawer} close={sideDrawerClosedHandler} />
       <main className={base.main}>{children}</main>
       <Footer />
-    </div>
+    </>
   );
 };
 

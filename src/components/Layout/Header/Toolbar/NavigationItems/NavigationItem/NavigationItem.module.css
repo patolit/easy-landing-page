@@ -1,0 +1,40 @@
+.NavigationItem {
+  text-align: inherit;
+}
+
+.NavigationItem a {
+  text-align: inherit;
+  text-decoration: none;
+}
+
+.NavigationItem a:hover,
+.NavigationItem a:active,
+.NavigationItem a.active {
+  color: #7b839e;
+}
+
+@media (min-width: 800px) {
+  .NavigationItem {
+    display: inline-block;
+    margin: 0 0 0 1.875em;
+    text-align: inherit;
+    font-size: 0.88889rem;
+    line-height: 1.5;
+    text-align: -webkit-match-parent;
+  }
+
+  .NavigationItem a {
+    color: inherit;
+    text-underline-offset: 0.125em;
+    text-decoration: none;
+    transition: color 0.15s ease;
+    background-color: transparent;
+    cursor: pointer;
+  }
+
+  .NavigationItem a:hover,
+  .NavigationItem a:active,
+  .NavigationItem a.active {
+    color: #7b839e;
+  }
+}

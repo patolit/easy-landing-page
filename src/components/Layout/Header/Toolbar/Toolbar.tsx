@@ -2,7 +2,7 @@ import * as React from "react";
 
 const classes = require("./Toolbar.module.css");
 import Logo from "../../../Logo/Logo";
-import NavigationItems from "../NavigationItems/NavigationItems";
+import NavigationItems from "./NavigationItems/NavigationItems";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
 
 interface ToolBarProps {
@@ -12,9 +12,7 @@ interface ToolBarProps {
 const Toolbar = (props: ToolBarProps) => {
   return (
     <header className={classes.Toolbar}>
-      <div className={classes.Logo}>
-        <Logo />
-      </div>
+      <Logo />
       <nav className={classes.DesktopOnly}>
         <NavigationItems />
       </nav>

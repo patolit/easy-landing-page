@@ -1,0 +1,28 @@
+.Toolbar {
+  /* header site header outer*/
+  position: sticky;
+  top: 0;
+  z-index: 999;
+  background-color: #fff;
+  color: #2c2f3b;
+  padding: 18px 37px;
+
+  /* divv class inner*/
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+
+  /*site heade inside*/
+  display: flex;
+  align-items: center;
+}
+
+.Toolbar nav {
+  margin-left: auto;
+}
+
+@media (max-width: 799px) {
+  .DesktopOnly {
+    display: none;
+  }
+}

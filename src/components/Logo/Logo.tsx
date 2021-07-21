@@ -11,9 +11,12 @@ const logo = (props: LogoProps) => {
   const { height } = props;
 
   return (
-    <div className={classes.Logo}>
-      <img src={RektLogo} style={{ height: height }} alt="MyBurger" />
-    </div>
+    <img
+      src={RektLogo}
+      className={classes.Logo}
+      style={{ height: height }}
+      alt="MyLogo"
+    />
   );
 };
 export default logo;
