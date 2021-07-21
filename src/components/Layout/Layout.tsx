@@ -29,11 +29,9 @@ const Layout = (props: LayoutProps) => {
 
   return (
     <div className={base.root}>
-      <title>{pageTitle}</title>
-
       <Toolbar drawerToggleClicked={sideDrawerToggleHandler} />
       <SideDrawer open={showSideDrawer} close={sideDrawerClosedHandler} />
-      <main className={base.root}>{children}</main>
+      <main className={base.main}>{children}</main>
       <Footer />
     </div>
   );
