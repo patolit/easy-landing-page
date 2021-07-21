@@ -5,6 +5,7 @@ import Toolbar from "./Navigation/Toolbar/Toolbar";
 import SideDrawer from "./Navigation/SideDrawer/SideDrawer";
 import { Footer } from "./Footer/Footer";
 
+import { Helmet } from "react-helmet";
 //import styles from "./layout.module.css";
 const styles = require("./layout.module.css");
 const base = require("../../pages/base.module.css");
@@ -29,6 +30,9 @@ const Layout = (props: LayoutProps) => {
 
   return (
     <div className={base.root}>
+      <Helmet>
+        <title>{pageTitle}</title>
+      </Helmet>
       <Toolbar drawerToggleClicked={sideDrawerToggleHandler} />
       <SideDrawer open={showSideDrawer} close={sideDrawerClosedHandler} />
       <main className={base.main}>{children}</main>
