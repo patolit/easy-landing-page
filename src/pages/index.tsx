@@ -1,14 +1,18 @@
 import * as React from "react";
 
-import { Layout } from "../components/layout";
-import {Footer} from "../components/footer"
+import { Layout } from "../components/Layout/Layout";
+import { MainArticleSection } from "../components/MainArticleSection/MainArticleSection";
+import { FeatureSection } from "../components/FeaturesSection/FeaturesSection";
+import { TestimonialSection } from "../components/TestimonialsSection/TestimonialSection";
+
+const classes = require("./base.module.css");
 
 function IndexPage() {
   return (
     <Layout pageTitle="Home Page">
-      
-      <p> this is done using tutorial</p>
-    <Footer></Footer>
+      <MainArticleSection />
+      <FeatureSection />
+      <TestimonialSection />
     </Layout>
   );
 }
