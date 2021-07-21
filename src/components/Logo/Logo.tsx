@@ -1,6 +1,7 @@
 import * as React from "react";
 
-import RektLogo from "../../assets/images/rekt.png";
+//import RektLogo from "../../assets/images/rekt.png";
+import RektLogo from "../../assets/images/logo.svg";
 const classes = require("./Logo.module.css");
 
 interface LogoProps {

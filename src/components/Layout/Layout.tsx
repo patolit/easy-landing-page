@@ -4,7 +4,6 @@ import { ReactNode } from "react";
 import Toolbar from "./Header/Toolbar/Toolbar";
 import SideDrawer from "./Header/SideDrawer/SideDrawer";
 import { Footer } from "./Footer/Footer";
-
 import { Helmet } from "react-helmet";
 //import styles from "./layout.module.css";
 const base = require("../../pages/base.module.css");
