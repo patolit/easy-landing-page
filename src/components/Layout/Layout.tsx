@@ -33,7 +33,7 @@ const Layout = (props: LayoutProps) => {
       </Helmet>
       <Toolbar drawerToggleClicked={sideDrawerToggleHandler} />
       <SideDrawer open={showSideDrawer} close={sideDrawerClosedHandler} />
-      <main className={base.main}>{children}</main>
+      <main className={base.mainSection}>{children}</main>
       <Footer />
     </>
   );
