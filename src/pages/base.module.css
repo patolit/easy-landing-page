@@ -5,6 +5,7 @@ body {
   background-color: grey;
   line-height: 1.66667;
   -webkit-font-smoothing: antialiased;
+  width: 100%;
 }
 
 html {
@@ -15,7 +16,6 @@ html {
 
 .mainSection {
   align-items: center;
-
   display: flex;
   -ms-flex-direction: column;
   flex-direction: column;
