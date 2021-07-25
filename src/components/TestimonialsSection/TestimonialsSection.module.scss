@@ -1,0 +1,44 @@
+.testimonials-section {
+  background: #fff;
+  text-align: center;
+}
+
+.title {
+  font-size: 1.66667em;
+  margin: 0 0 0.25em;
+}
+
+.subtitle {
+  color: #7b839e;
+  line-height: 1.5;
+  max-width: 555px;
+  margin-bottom: 1.66667em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .item {
+    max-width: 450px;
+    &:not(:first-child) {
+      margin-top: 1.66667rem;
+    }
+  }
+
+  @media only screen and (min-width: 900px) {
+    flex-direction: row;
+    align-items: stretch;
+
+    .item {
+      max-width: 33.333%;
+      &:not(:first-child) {
+        margin-top: 0;
+        margin-left: 1.66667rem;
+      }
+    }
+  }
+}
