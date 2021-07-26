@@ -1,14 +1,21 @@
+.main-section {
+  background: linear-gradient(to right, #0072ff, #00c6ff);
+  text-align: center;
+}
+
 .mainHero {
   color: #fff;
   padding: 3.33333em 4vw 2.5em;
-  background: linear-gradient(to right, #0072ff, #00c6ff);
-  margin-left: -0.833335rem;
-  margin-right: -0.833335rem;
   max-width: 1140px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   flex-direction: column;
+
+  @media (min-width: 800px) {
+    flex-direction: row-reverse;
+    align-items: center;
+  }
 }
 
 .image {
@@ -18,13 +25,14 @@
   padding-left: 0.833335rem;
   padding-right: 0.833335rem;
   position: relative;
-  width: 100%;
-  max-width: 100%;
   margin-bottom: 1.66667em;
   text-align: center;
   flex: 0 0 58.333%;
 
   height: auto;
+  @media (min-width: 800px) {
+    max-width: 58.333%;
+  }
 }
 
 .content {
@@ -36,6 +44,11 @@
   padding-right: 0.833335rem;
   position: relative;
   width: 100%;
+
+  @media (min-width: 800px) {
+    text-align: left;
+    max-width: 41.666%;
+  }
 }
 
 .content h2 {
@@ -43,35 +56,20 @@
   margin-top: 0;
   font-size: 2.44444em;
   position: relative;
-
   line-height: 1.16667;
   margin: 1.25em 0 0.5em;
   text-rendering: optimizeLegibility;
 }
 
 @media (min-width: 800px) {
-  .image {
-    max-width: 58.333%;
-  }
-  .content {
-    text-align: left;
-    max-width: 41.666%;
-  }
-
-  .content h2:after {
+  h2:after {
     border-left: 1.5em solid #fff;
     display: block;
     content: "";
     height: 2px;
     margin-top: 0.5em;
   }
-
-  .mainHero {
-    flex-direction: row-reverse;
-    align-items: center;
-  }
 }
-
 .content div {
   text-align: left;
   margin: 0 0 1em;

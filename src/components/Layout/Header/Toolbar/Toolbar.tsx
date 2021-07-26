@@ -1,9 +1,12 @@
 import * as React from "react";
+import clsx from "clsx";
 
-const classes = require("./Toolbar.module.css");
 import Logo from "../../../Logo/Logo";
 import NavigationItems from "./NavigationItems/NavigationItems";
 import DrawerToggle from "../SideDrawer/DrawerToggle/DrawerToggle";
+
+const classes = require("./Toolbar.module.scss");
+const commonClasses = require("../../../common.module.scss");
 
 interface ToolBarProps {
   drawerToggleClicked: () => void;
@@ -11,13 +14,15 @@ interface ToolBarProps {
 
 const Toolbar = (props: ToolBarProps) => {
   return (
-    <header className={classes.Toolbar}>
-      <Logo />
-      <nav className={classes.DesktopOnly}>
-        <NavigationItems />
-      </nav>
-      <DrawerToggle clicked={props.drawerToggleClicked} />
-    </header>
+    <section className={clsx(classes.Toolbar)}>
+      <header className={clsx(classes.innerToolbar, commonClasses.inner)}>
+        <Logo />
+        <nav className={classes.DesktopOnly}>
+          <NavigationItems />
+        </nav>
+        <DrawerToggle clicked={props.drawerToggleClicked} />
+      </header>
+    </section>
   );
 };
 
