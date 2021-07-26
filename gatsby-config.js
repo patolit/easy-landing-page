@@ -3,5 +3,5 @@ module.exports = {
     siteUrl: "https://www.yourdomain.tld",
     title: "My landing page",
   },
-  plugins: [],
+  plugins: ["gatsby-plugin-sass"],
 };

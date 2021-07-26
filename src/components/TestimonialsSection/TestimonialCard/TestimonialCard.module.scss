@@ -1,0 +1,51 @@
+.root {
+  box-shadow: 0 3px 10px 0 rgb(76 82 103 / 15%);
+  padding: 1.5em;
+  background: #fff;
+  border: 1px solid #ebecf0;
+  border-radius: 3px;
+  box-sizing: border-box;
+  color: #4c5267;
+  font-size: 0.88889em;
+  line-height: 1.66667;
+  display: flex;
+  flex-direction: column;
+}
+
+.text {
+  position: relative;
+  text-align: left;
+  padding-top: 2.25em;
+
+  &:before {
+    color: #0072ff;
+    content: "\201C";
+    display: block;
+    font-size: 3.5em;
+    font-weight: bold;
+    left: 0;
+    line-height: 1;
+    position: absolute;
+    top: 0;
+  }
+}
+
+.author {
+  display: flex;
+  align-items: center;
+  margin-top: auto;
+}
+
+.author-image {
+  border-radius: 50%;
+  height: 60px;
+  margin-right: 0.9375em;
+  width: 60px;
+}
+
+.author-name {
+  color: #2c2f3b;
+  font-size: inherit;
+  font-weight: bold;
+  line-height: 1.4;
+}

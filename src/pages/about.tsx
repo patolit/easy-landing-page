@@ -2,7 +2,7 @@ import * as React from "react";
 
 import { Layout } from "../components/Layout/Layout";
 
-const classes = require("./base.module.css");
+const classes = require("./base.module.scss");
 
 function AboutMe() {
   return (
