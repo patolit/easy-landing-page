@@ -10,8 +10,8 @@ function TestimonialsSection() {
       className={clsx(commonClasses.section, classes.testimonialsSection)}
     >
       <div className={commonClasses.inner}>
-        <h2 className={classes.title}>Testimonials</h2>
-        <p className={classes.subtitle}>
+        <h2 className={commonClasses.title}>Testimonials</h2>
+        <p className={commonClasses.subtitle}>
           Aliquam malesuada ligula eget est fringilla blandit. Integer finibus
           semper libero id sodales.
         </p>

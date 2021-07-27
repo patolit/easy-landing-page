@@ -1,0 +1,44 @@
+.features-section {
+  background: #fff;
+  text-align: center;
+}
+
+.list {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 1140px;
+
+  img {
+    padding-left: 0.833335rem;
+    padding-right: 3.33333em;
+  }
+  @media only screen and (min-width: 801px) {
+    :nth-child(2n + 1) {
+      flex-direction: row-reverse;
+      img {
+        padding-left: 3.33333em;
+        padding-right: 0.833335rem;
+      }
+    }
+  }
+}
+
+.item {
+  margin-bottom: 1.66667em;
+  align-items: center;
+  justify-content: center;
+
+  @media only screen and (min-width: 801px) {
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+
+    h3:after {
+      border-left: 1.5em solid #0072ff;
+      display: block;
+      content: "";
+      height: 2px;
+      margin-top: 0.5em;
+    }
+  }
+}

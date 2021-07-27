@@ -48,6 +48,14 @@
   @media (min-width: 800px) {
     text-align: left;
     max-width: 41.666%;
+
+    h2:after {
+      border-left: 1.5em solid #fff;
+      display: block;
+      content: "";
+      height: 2px;
+      margin-top: 0.5em;
+    }
   }
 }
 
@@ -61,15 +69,6 @@
   text-rendering: optimizeLegibility;
 }
 
-@media (min-width: 800px) {
-  h2:after {
-    border-left: 1.5em solid #fff;
-    display: block;
-    content: "";
-    height: 2px;
-    margin-top: 0.5em;
-  }
-}
 .content div {
   text-align: left;
   margin: 0 0 1em;

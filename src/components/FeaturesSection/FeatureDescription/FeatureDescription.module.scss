@@ -1,0 +1,23 @@
+.title {
+  font-size: 2.44444em;
+}
+
+.text {
+  color: #4c5267;
+  margin: 0 0 1em;
+}
+
+.image {
+  border-style: none;
+  vertical-align: middle;
+  @media only screen and (min-width: 801px) {
+    max-width: 58%;
+  }
+}
+
+.content {
+  @media only screen and (min-width: 801px) {
+    max-width: 42%;
+    flex: 0 0 42%;
+  }
+}
