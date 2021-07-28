@@ -3,7 +3,7 @@ import Backdrop from "../../../Backdrop/Backdrop";
 
 import Logo from "../../../Logo/Logo";
 import NavigationItems from "../Toolbar/NavigationItems/NavigationItems";
-const classes = require("./SideDrawer.module.css");
+const classes = require("./SideDrawer.module.scss");
 
 interface SideDrawerProps {
   open: boolean;

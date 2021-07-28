@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const classes = require("./NavigationItems.module.css");
+const classes = require("./NavigationItems.module.scss");
 import NavigationItem from "./NavigationItem/NavigationItem";
 
 const navigationItems = () => (

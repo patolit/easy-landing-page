@@ -11,9 +11,15 @@
   z-index: 999;
   background-color: #fff;
   color: #2c2f3b;
-  padding: 3.33333em 4vw 2.5em;
-  padding-bottom: 1em;
-  padding-top: 1em;
+  padding: 1em 4vw;
+  top: 0;
+  left: 0;
+  @media (max-width: 799px) {
+    position: absolute;
+    width: 100%;
+
+    transition: opacity 0.15s ease-in-out, visibility 0s ease-in-out 0.15s;
+  }
 }
 
 .Toolbar nav {

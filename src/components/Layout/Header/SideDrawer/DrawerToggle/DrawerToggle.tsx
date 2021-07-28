@@ -1,6 +1,6 @@
 import * as React from "react";
 
-const classes = require("./DrawerToggle.module.css");
+const classes = require("./DrawerToggle.module.scss");
 
 interface DrawerToggleProps {
   clicked: () => void;
