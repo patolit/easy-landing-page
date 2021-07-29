@@ -21,9 +21,11 @@ const FeatureDescription = (props: FeatureDescriptionProps) => {
       <div className={classes.content}>
         <h3 className={classes.title}>{featureTitle}</h3>
         <p className={classes.text}>{featureText}</p>
-        <Link to={featurePage} className={classes.button}>
-          Learn More...
-        </Link>
+        <div className={classes.buttonBlock}>
+          <Link to={featurePage} className={classes.button}>
+            Learn More...
+          </Link>
+        </div>
       </div>
     </div>
   );

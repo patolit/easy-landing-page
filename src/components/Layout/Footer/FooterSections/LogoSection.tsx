@@ -1,4 +1,5 @@
 import * as React from "react";
+import clsx from "clsx";
 
 const classes = require("./LogoSection.module.scss");
 import Logo from "../../../Logo/Logo";
@@ -10,9 +11,9 @@ interface LogoSectionProps {
 function LogoSection(props: LogoSectionProps) {
   const { className } = props;
   return (
-    <div className={className}>
+    <div className={clsx(className, classes.logo)}>
       <Logo />
-      <p>This is a DEMO</p>
+      <p>This is a demo</p>
     </div>
   );
 }

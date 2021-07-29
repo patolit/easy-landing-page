@@ -1,11 +1,14 @@
 .NavigationItem {
   text-align: inherit;
   border-bottom: 1px solid #ebecf0;
+  padding: 0.75em 0;
+  text-decoration: none;
 }
 
 .NavigationItem a {
   text-align: inherit;
   text-decoration: none;
+  cursor: pointer;
 }
 
 .NavigationItem a:hover,
@@ -23,6 +26,8 @@
     line-height: 1.5;
     text-align: -webkit-match-parent;
     border-bottom: none;
+    border-top: none;
+    padding: inherit;
   }
 
   .NavigationItem a {
@@ -31,12 +36,5 @@
     text-decoration: none;
     transition: color 0.15s ease;
     background-color: transparent;
-    cursor: pointer;
-  }
-
-  .NavigationItem a:hover,
-  .NavigationItem a:active,
-  .NavigationItem a.active {
-    color: #7b839e;
   }
 }

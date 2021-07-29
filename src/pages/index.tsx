@@ -5,8 +5,6 @@ import { MainArticleSection } from "../components/MainArticleSection/MainArticle
 import { FeatureSection } from "../components/FeaturesSection/FeaturesSection";
 import { TestimonialsSection } from "../components/TestimonialsSection/TestimonialsSection";
 
-const classes = require("./base.module.scss");
-
 function IndexPage() {
   return (
     <Layout pageTitle="Home Page">

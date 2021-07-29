@@ -2,7 +2,7 @@ import * as React from "react";
 import clsx from "clsx";
 //import RektLogo from "../../assets/images/rekt.png";
 import RektLogo from "../../assets/images/logo.svg";
-const classes = require("./Logo.module.css");
+const classes = require("./Logo.module.scss");
 
 interface LogoProps {
   height?: string;

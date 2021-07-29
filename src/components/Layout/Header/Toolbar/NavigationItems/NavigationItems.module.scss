@@ -1,7 +1,10 @@
 .NavigationItems {
   list-style: none;
-
-  :first-child {
+  li {
+    font-size: 0.88889rem;
+    line-height: 1.5;
+  }
+  li:first-child {
     border-top: 1px solid #ebecf0;
   }
 }
@@ -17,7 +20,7 @@
     height: 100%;
     color: inherit;
     list-style: none;
-    :first-child {
+    li:first-child {
       border-top: none;
     }
   }

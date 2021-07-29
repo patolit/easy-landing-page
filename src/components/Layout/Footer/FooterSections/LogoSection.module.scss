@@ -1,0 +1,9 @@
+.logo {
+  @media (max-width: 899px) {
+    width: 100%;
+
+    justify-content: left;
+    margin: 0 auto;
+    padding: 0 15px;
+  }
+}

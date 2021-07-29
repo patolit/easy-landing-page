@@ -27,6 +27,9 @@
       margin-top: 0;
     }
   }
+  @media (max-width: 899px) {
+    justify-content: left;
+  }
 }
 
 .footer-element {
