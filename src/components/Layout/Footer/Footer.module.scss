@@ -7,10 +7,10 @@
   display: flex;
   flex-direction: row;
   flex-wrap: wrap;
-  align-items: center;
+
   margin-left: auto;
   margin-right: auto;
-  justify-content: center;
+  justify-content: space-around;
   h1,
   h2,
   h3,
@@ -29,6 +29,7 @@
   }
   @media (max-width: 899px) {
     justify-content: left;
+    align-items: flex-start;
   }
 }
 
@@ -46,6 +47,7 @@
 .top {
   border-bottom: 1px solid rgba(76, 82, 103, 0.4);
   padding-bottom: 1.11111em;
+  justify-content: space-around;
 }
 
 .bottom {
