@@ -1,0 +1,79 @@
+.common-page {
+  text-align: left;
+}
+
+.title {
+  margin: 0 auto;
+  font-size: 2em;
+  @media only screen and (min-width: 601px) {
+    font-size: 2.44444em;
+  }
+  text-align: center;
+}
+
+.contact-form {
+  max-width: 750px;
+  color: #4c5267;
+  margin: 0 auto;
+  font-family: "Nunito Sans", sans-serif;
+  label {
+    display: block;
+    color: inherit;
+    line-height: 1.5;
+    margin-bottom: 0.25em;
+  }
+
+  input,
+  textarea {
+    background: #fff;
+    border: 1px solid #ebecf0;
+    border-radius: 3px;
+    box-shadow: none;
+    box-sizing: border-box;
+    color: #2c2f3b;
+    display: block;
+    font-size: 1em;
+    font-weight: normal;
+    line-height: 1.5;
+    max-width: 100%;
+    padding: 0.5em;
+    width: 100%;
+  }
+
+  textarea,
+  button {
+    overflow: visible;
+    font-family: inherit;
+    font-size: 100%;
+    line-height: 1.15;
+    margin: 0;
+  }
+
+  input[type="submit"] {
+    align-items: center;
+    background: #0072ff;
+    border: 2px solid #0072ff;
+    border-radius: 3px;
+    box-sizing: border-box;
+    color: #fff;
+    cursor: pointer;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    font-size: 0.88889em;
+    font-weight: bold;
+    -ms-flex-pack: center;
+    justify-content: center;
+    line-height: 1.5;
+    padding: 0.5em 1.875em;
+    text-decoration: none;
+    -webkit-transition: opacity 0.15s ease-in-out;
+    transition: opacity 0.15s ease-in-out;
+    -webkit-appearance: button;
+    width: 25%;
+  }
+}
+
+.submit-button {
+  margin-top: 1.66667em;
+  margin-bottom: 1em;
+}
