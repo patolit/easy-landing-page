@@ -17,7 +17,7 @@ const CommonPage = (props: CommonPageProps) => {
   const { image, title, text, subtitle, className } = props;
 
   return (
-    <section className={clsx(commonClasses.section)}>
+    <section className={clsx(commonClasses.section, className)}>
       <div
         className={clsx(
           commonClasses.inner,
