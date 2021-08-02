@@ -9,7 +9,7 @@ const commonClasses = require("../common.module.scss");
 const MainArticleSection = () => {
   return (
     <section className={clsx(commonClasses.section, classes.mainSection)}>
-      <div className={clsx(classes.mainHero, commonClasses.inner)}>
+      <div className={clsx(commonClasses.inner, classes.mainHero)}>
         <img className={classes.image} src={HeroIMage} />
         <div className={classes.content}>
           <h2>This Is A Big Hero Headline </h2>
