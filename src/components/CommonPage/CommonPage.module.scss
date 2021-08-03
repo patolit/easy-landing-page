@@ -1,10 +1,12 @@
+@import "../../assets/variables.scss";
+
 .common-page {
   text-align: center;
 }
 
 .title {
   font-size: 2em;
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: $mid-screen) {
     font-size: 2.44444em;
   }
 }

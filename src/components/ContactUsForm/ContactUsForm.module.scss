@@ -1,3 +1,5 @@
+@import "../../assets/variables.scss";
+
 .common-page {
   text-align: left;
 }
@@ -5,7 +7,7 @@
 .title {
   margin: 0 auto;
   font-size: 2em;
-  @media only screen and (min-width: 601px) {
+  @media only screen and (min-width: $mid-screen) {
     font-size: 2.44444em;
   }
   text-align: center;
@@ -51,12 +53,8 @@
 
   input[type="submit"] {
     align-items: center;
-    background: #0072ff;
-    border: 2px solid #0072ff;
     border-radius: 3px;
     box-sizing: border-box;
-    color: #fff;
-    cursor: pointer;
     display: -ms-inline-flexbox;
     display: inline-flex;
     font-size: 0.88889em;
@@ -70,6 +68,20 @@
     transition: opacity 0.15s ease-in-out;
     -webkit-appearance: button;
     width: 25%;
+  }
+
+  .active {
+    background: #0072ff;
+    border: 2px solid #0072ff;
+    color: #fff;
+    cursor: pointer;
+  }
+
+  .inactive {
+    background: #7b7d80;
+    border: 2px solid #424547;
+    color: #fff;
+    cursor: not-allowed;
   }
 }
 

@@ -1,3 +1,5 @@
+@import "../../../../../assets/variables.scss";
+
 .DrawerToggle {
   margin-left: auto;
   background: 0;
@@ -20,7 +22,7 @@
   margin: 5px;
 }
 
-@media (min-width: 800px) {
+@media (min-width: $mid-screen) {
   .DrawerToggle {
     display: none;
   }

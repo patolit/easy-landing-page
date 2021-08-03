@@ -1,5 +1,7 @@
+@import "../../../../assets/variables.scss";
+
 .logo {
-  @media (max-width: 899px) {
+  @media (max-width: $mid-screen) {
     width: 100%;
 
     justify-content: left;

@@ -1,3 +1,5 @@
+@import "../../assets/variables.scss";
+
 .testimonials-section {
   background: #fff;
   text-align: center;
@@ -15,7 +17,7 @@
     }
   }
 
-  @media only screen and (min-width: 900px) {
+  @media only screen and (min-width: $mid-screen) {
     flex-direction: row;
     align-items: stretch;
 

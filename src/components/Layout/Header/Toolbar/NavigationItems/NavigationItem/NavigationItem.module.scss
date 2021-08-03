@@ -1,3 +1,5 @@
+@import "../../../../../../assets/variables.scss";
+
 .NavigationItem {
   text-align: inherit;
   border-bottom: 1px solid #ebecf0;
@@ -17,7 +19,7 @@
   color: #7b839e;
 }
 
-@media (min-width: 800px) {
+@media (min-width: $mid-screen) {
   .NavigationItem {
     display: inline-block;
     margin: 0 0 0 1.875em;

@@ -1,3 +1,5 @@
+@import "../../../../assets/variables.scss";
+
 .inner-toolbar {
   /*site heade inside*/
   display: flex;
@@ -14,7 +16,7 @@
   padding: 1em 4vw;
   top: 0;
   left: 0;
-  @media (max-width: 799px) {
+  @media (max-width: $mid-screen) {
     position: initial;
     width: 100%;
 
@@ -26,7 +28,7 @@
   margin-left: auto;
 }
 
-@media (max-width: 799px) {
+@media (max-width: $mid-screen) {
   .DesktopOnly {
     display: none;
   }

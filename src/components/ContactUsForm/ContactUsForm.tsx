@@ -2,6 +2,7 @@ import * as React from "react";
 import { useState } from "react";
 import clsx from "clsx";
 import emailjs from "emailjs-com";
+import { navigate } from "gatsby";
 
 const classes = require("./ContactUsForm.module.scss");
 const commonClasses = require("../common.module.scss");
@@ -13,29 +14,36 @@ interface MyFormElments extends HTMLFormElement {
 const ContactUsForm = () => {
   const [wasFormSubmitted, setWasFormSubmitted] = useState(false);
   const [errorMessage, setErrorMessage] = useState("");
+  const [isSending, setIsSending] = useState(false);
 
   function sendEmail(e: React.ChangeEvent<HTMLFormElement>): void {
     e.preventDefault();
-
-    emailjs
-      .sendForm(
-        "Tab Control SMTP",
-        "contact_form",
-        e.target,
-        "user_4jchLuycWRUfYt1t5ZATw"
-      )
-      .then(
-        (result) => {
-          console.log(result.text);
-          setWasFormSubmitted(true);
-        },
-        (error) => {
-          console.log(error.text);
-          setErrorMessage(error.text);
-        }
-      );
+    setIsSending(true);
+    process.env.GATSBY_EMAILJS_SERVICEID &&
+      process.env.GATSBY_EMAILJS_TEMPLATEID &&
+      process.env.GATSBY_EMAILJS_USERID &&
+      emailjs
+        .sendForm(
+          process.env.GATSBY_EMAILJS_SERVICEID,
+          process.env.GATSBY_EMAILJS_TEMPLATEID,
+          e.target,
+          process.env.GATSBY_EMAILJS_USERID
+        )
+        .then(
+          (result) => {
+            console.log(result.text);
+            setWasFormSubmitted(true);
+            navigate("/");
+          },
+          (error) => {
+            console.log(error.text);
+            setErrorMessage(error.text);
+            setIsSending(false);
+          }
+        );
   }
 
+  console.log(process.env.GATSBY_EMAILJS_SERVICEID);
   return (
     <section className={clsx(commonClasses.section)}>
       <div
@@ -62,7 +70,11 @@ const ContactUsForm = () => {
             <label>Message</label>
             <textarea name="message" />
             <div className={classes.submitButton}>
-              <input type="submit" value="Send" />
+              <input
+                type="submit"
+                value="Send"
+                className={isSending ? classes.inactive : classes.active}
+              />
             </div>
           </form>
         )}

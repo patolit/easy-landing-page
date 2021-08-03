@@ -1,3 +1,5 @@
+@import "../../../assets/variables.scss";
+
 .footer {
   background: #2c2f3b;
   color: #999fb3;
@@ -27,7 +29,7 @@
       margin-top: 0;
     }
   }
-  @media (max-width: 899px) {
+  @media (max-width: $mid-screen) {
     justify-content: left;
     align-items: flex-start;
   }

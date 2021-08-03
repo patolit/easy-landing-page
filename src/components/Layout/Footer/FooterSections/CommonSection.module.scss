@@ -1,11 +1,13 @@
+@import "../../../../assets/variables.scss";
+
 .common {
-  @media (max-width: 899px) {
+  @media (max-width: $mid-screen) {
     flex: 0 0 50%;
     justify-content: left;
     margin: 0 auto;
     padding: 0 15px;
   }
-  @media (max-width: 480px) {
+  @media (max-width: $small-screen) {
     flex: 0 0 100%;
   }
 }
